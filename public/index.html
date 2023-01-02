@@ -8,21 +8,81 @@
     <link rel="stylesheet" href="/public/output.css" />
     <title>Pizzeria Namn</title>
   </head>
-  <body class="h-full w-full">
-    <header class="relative h-[100vh] w-full pizza__image-desktop">
-      <div class="absolute h-[100vh] w-full pizza__image-overlay">
-        <div class="flex flex-col items-center justify-between mt-5 md:mt-0 min-h-[35vh] w-full pt-8">
-          <div class="flex flex-col items-center">
-            <h1 class="text-xl text-white">Pizzeria Namn</h1>
-            <h2 class="text-white">0738962671</h2>
-          </div>
-          <div class="flex flex-col items-center w-full">
-            <button class="text-white w-[30vw] sm:w-[10vw] p-1 bg-[#E0773B] rounded-md">Meny</button>
-            <a href="#footer" class="text-[#98A06D]">Öppetider</a>
-          </div>
+  <body class="bg-[#000000]">
+    <header class="relative h-screen">
+      <section class="flex flex-col items-center justify-between min-h-[35vh] w-full pt-8">
+        <div class="flex flex-col items-center">
+          <h1 class="text-[2.5rem] font-semibold">Pizzeria Namn</h1>
+          <p class="text-[1.5rem] font-thin">0738962671</p>
         </div>
-        <div class="pizza__image-phone w-full min-h-[90vh] md:h-[100vh] bg-no-repeat bg-center z-[-10]"></div>
+        <div class="flex flex-col items-center w-full">
+          <button class="w-[30vw] sm:w-[10vw] p-1 bg-[#E0773B] rounded-md">Meny</button>
+          <a href="#footer" class="text-[#98A06D]">Öppetider</a>
+        </div>
+      </section>
+      <div class="pizza__image w-full h-screen bg-no-repeat bg-center z-[-10]">
+        <div class="h-screen w-full bg-[#0804048a]"></div>
       </div>
     </header>
+
+    <!-- SPACER -->
+    <div class="h-[60vh] w-full"></div>
+    <!-- SPACER -->
+
+    <main class="sm:h-screen h-[150vh] w-full relative flex md:justify-center md:items-center">
+      <section class="flex gap-8 sm:gap-12 flex-wrap ml-[2rem] md:justify-center">
+        <h2 class="text-[1.8rem] sm:text-[2rem] font-semibold w-[80%] underline">Pizza</h2>
+        <div class="sm:w-[33%]">
+          <h3 class="text-[1.5rem] font-semibold">Klass 1 <span class="text-[1rem] font-normal">100kr</span></h3>
+          <p class="font-thin">Margareta - <span class="text-[0.7rem]">Ost</span></p>
+          <p class="font-thin">Vesuvio - <span class="text-[0.7rem]">Ost, Skinka</span></p>
+          <p class="font-thin">Capricosa - <span class="text-[0.7rem]">Ost, Skinka, Svamp</span></p>
+          <p class="font-thin">Hawai - <span class="text-[0.7rem]">Ost, Skinka, Annanas</span></p>
+          <p class="font-thin">Kebab pizza - <span class="text-[0.7rem]">Ost, Kebab, Sallad, Tomat</span></p>
+        </div>
+
+        <div class="sm:w-[33%]">
+          <h3 class="text-[1.5rem] font-semibold">Klass 2 <span class="text-[1rem] font-normal">100kr</span></h3>
+          <p class="font-thin">Margareta - <span class="text-[0.7rem]">Ost</span></p>
+          <p class="font-thin">Vesuvio - <span class="text-[0.7rem]">Ost, Skinka</span></p>
+          <p class="font-thin">Capricosa - <span class="text-[0.7rem]">Ost, Skinka, Svamp</span></p>
+          <p class="font-thin">Hawai - <span class="text-[0.7rem]">Ost, Skinka, Annanas</span></p>
+          <p class="font-thin">Kebab pizza - <span class="text-[0.7rem]">Ost, Kebab, Sallad, Tomat</span></p>
+        </div>
+
+        <div class="sm:w-[33%]">
+          <h3 class="text-[1.5rem] font-semibold">Klass 3 <span class="text-[1rem] font-normal">100kr</span></h3>
+          <p class="font-thin">Margareta - <span class="text-[0.7rem]">Ost</span></p>
+          <p class="font-thin">Vesuvio - <span class="text-[0.7rem]">Ost, Skinka</span></p>
+          <p class="font-thin">Capricosa - <span class="text-[0.7rem]">Ost, Skinka, Svamp</span></p>
+          <p class="font-thin">Hawai - <span class="text-[0.7rem]">Ost, Skinka, Annanas</span></p>
+          <p class="font-thin">Kebab pizza - <span class="text-[0.7rem]">Ost, Kebab, Sallad, Tomat</span></p>
+        </div>
+
+        <div class="sm:w-[33%]">
+          <h3 class="text-[1.5rem] font-semibold">Klass 4 <span class="text-[1rem] font-normal">100kr</span></h3>
+          <p class="font-thin">Margareta - <span class="text-[0.7rem]">Ost</span></p>
+          <p class="font-thin">Vesuvio - <span class="text-[0.7rem]">Ost, Skinka</span></p>
+          <p class="font-thin">Capricosa - <span class="text-[0.7rem]">Ost, Skinka, Svamp</span></p>
+          <p class="font-thin">Hawai - <span class="text-[0.7rem]">Ost, Skinka, Annanas</span></p>
+          <p class="font-thin">Kebab pizza - <span class="text-[0.7rem]">Ost, Kebab, Sallad, Tomat</span></p>
+        </div>
+      </section>
+      <div class="pizza__image w-full sm:h-screen h-[150vh] bg-no-repeat bg-center z-[-10] rotate-180">
+        <div class="sm:h-screen h-[150vh] w-full bg-[#0804048a]"></div>
+      </div>
+    </main>
+    <footer class="h-[40vh] bg-[#343434] flex flex-col gap-4 items-center justify-center">
+      <div class="flex flex-col justify-between h-2/5 w-[80vw] sm:w-[40vw] lg:w-[25vw]">
+        <h4 class="tex-[1.5rem] font-semibold underline">Öppetider</h4>
+        <div class="flex flex-wrap justify-between">
+          <p class="w-[40%] font-semibold">Mån - Tors</p>
+          <p class="w-[40%] text-right">11:00 - 20:00</p>
+          <p class="w-[40%] font-semibold">Fre - Sön</p>
+          <p class="w-[40%] text-right">11:00 - 23:00</p>
+        </div>
+      </div>
+      <a href="#">Pizzagatan 26</a>
+    </footer>
   </body>
 </html>

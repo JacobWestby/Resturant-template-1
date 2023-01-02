@@ -1,19 +1,9 @@
-const pizzaImagePhone = document.querySelector('.pizza__image-phone');
-const pizzaImageDesktop = document.querySelector('.pizza__image-desktop');
-const overlay = document.querySelector('.pizza__image-overlay');
+const pizzaImage = document.querySelectorAll('.pizza__image');
 
-const setPizaImage = () => {
-    if (window.innerWidth < 768) {
-        pizzaImagePhone.style.backgroundImage = "url('../src/images/Banner_Pizza-removebg.png')";
-    } else {
-        pizzaImageDesktop.style.backgroundImage = "url('../src/images/Banner_Pizza_cropped.jpg')";
-        pizzaImageDesktop.style.backgroundSize = "cover";
-        pizzaImageDesktop.style.position = "absolute";
-        pizzaImageDesktop.style.top = "0";
-        pizzaImageDesktop.style.background
+pizzaImage.forEach((item) => {
 
-        overlay.style.backgroundColor = "rgba(62, 40, 40, 0.3)";
-    }
-}
-
-setPizaImage();
+    item.style.backgroundImage = "url('../src/images/Banner_Pizza_cropped.jpg')";
+    item.style.backgroundSize = "cover";
+    item.style.position = "absolute";
+    item.style.top = "0";
+});
